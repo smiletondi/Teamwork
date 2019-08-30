@@ -3,8 +3,7 @@
 .container {
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto auto;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +41,8 @@ body {
     height: 50px;
     width: 100%;
     background-color: #4d4d4d;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .nav>.nav-header {
@@ -54,6 +54,11 @@ body {
     font-size: 22px;
     color: #fff;
     padding: 10px 10px 10px 10px;
+}
+
+.nav-title>a {
+    text-decoration: none;
+    color: white;
 }
 
 .nav>.nav-bars {
@@ -83,59 +88,65 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #f3ef36;
+    color: #f3ef36;
 }
 
-/* @media (max-width:600px) {
-    .nav>.nav-bars {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
+.btn {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
 
-    .nav>.nav-bars>label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-    }
+.btn-default {
+    color: whitesmoke;
+    background-color: #1c5d99;
+    border-color: #ccc;
+}
 
-    .nav>.nav-bars>label:hover,
-    .nav #nav-check:checked~.nav-bars>label {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
+.btn-default:hover {
+    background-color: #4daa57;
+}
 
-    .nav>.nav-bars>label>span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
-    }
+textarea[name="article"] {
+    margin: 10px 10px;
+    background-color: whitesmoke;
+    width: 50vw;
+    height: 10vh;
+    display: block;
+}
 
-    .nav>.nav-links {
-        position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
-    }
+.share-btn {
+    margin: 10px 10px;
+}
 
-    .nav>.nav-links>a {
-        display: block;
-        width: 100%;
-    }
+.article {
+    display: block;
+    padding: 2vh 3vw;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 5vh;
+}
 
-    .nav>#nav-check:not(:checked)~.nav-links {
-        height: 0px;
-    }
+.article-body>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
-} */
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.muted{
+    margin: 0 10px;
+    opacity: 0.5;
+}

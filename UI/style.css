@@ -43,17 +43,20 @@ body {
     background-color: #4d4d4d;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav>.nav-header {
+.nav-header {
     display: inline;
 }
 
-.nav>.nav-header>.nav-title {
+.nav-title {
     display: inline-block;
-    font-size: 22px;
+    font-size: 25px;
+    font-family: 'Berkshire Swash';
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px;;
 }
 
 .nav-title>a {
@@ -61,17 +64,12 @@ body {
     color: white;
 }
 
-.nav>.nav-bars {
-    display: none;
-}
-
-.nav>.nav-links {
+.nav-links {
     display: inline;
-    float: right;
     font-size: 18px;
 }
 
-.nav>.nav-links>a {
+.nav-links>a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
@@ -80,10 +78,6 @@ body {
 
 .nav>.nav-links>a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav>#nav-check {
-    display: none;
 }
 
 .nav-links a:hover,
@@ -135,7 +129,7 @@ textarea[name="article"] {
     margin-top: 5vh;
 }
 
-.article-body>p {
+.feed-article-list .article-body>p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -150,3 +144,13 @@ textarea[name="article"] {
     margin: 0 10px;
     opacity: 0.5;
 }
+
+.my-article-list>.article>.article-footer{
+    justify-content: space-evenly;
+}
+/* 
+.my-articles.article-body>p {
+    white-space: nowrap;
+    overflow: default;
+    text-overflow: ellipsis;
+} */

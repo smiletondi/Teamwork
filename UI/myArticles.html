@@ -20,26 +20,20 @@
         </div>
 
         <div class="nav-links">
-            <a href="./myArticles.html">My articles</a>
+            <a class="active" href="./myArticles.html">My articles</a>
             <button class="btn btn-default">Log Out</button>
         </div>
     </div>
 
-    <!-- post articles -->
-    <div class="container">
-        <form method="POST" action="/postArticle">
-            <textarea name="article" placeholder="Write something ..."></textarea>
-            <button class="btn btn-default share-btn" type="submit">Share</button>
-        </form>
-        <hr>
-    </div>
-
     <!-- articles list -->
 
-    <div class="container feed-article-list">
+    <div class="container my-article-list">
+        <h3>List of my articles:</h3>
+        <hr>
+
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 1 at 05:28 27/04/2019</h3>
+                <h3>At 05:28 27/04/2019</h3>
             </div>
             <div class="article-body">
                 <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
@@ -47,39 +41,60 @@
             </div>
             <div class="article-footer">
                 <button class="btn btn-default">View</button>
+                <button class="btn btn-default">Edit</button>
+                <button class="btn btn-default">Delete</button>
                 <span class="muted">comments: 0</span>
             </div>
         </div>
 
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 2 at 05:18 27/04/2019</h3>
+                <h3>At 04:38 27/04/2019</h3>
             </div>
             <div class="article-body">
-                <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
+                <p>Content of Article 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
                 </p>
             </div>
             <div class="article-footer">
                 <button class="btn btn-default">View</button>
+                <button class="btn btn-default">Edit</button>
+                <button class="btn btn-default">Delete</button>
                 <span class="muted">comments: 8</span>
             </div>
         </div>
 
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 3 at 05:08 27/04/2019</h3>
+                <h3>At 04:14 27/04/2019</h3>
             </div>
             <div class="article-body">
-                <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
                 </p>
             </div>
             <div class="article-footer">
                 <button class="btn btn-default">View</button>
+                <button class="btn btn-default">Edit</button>
+                <button class="btn btn-default">Delete</button>
                 <span class="muted">comments: 12</span>
             </div>
         </div>
-    </div>
+        <div class="container article">
+            <div class="article-header">
+                <h3>At 03:25 22/04/2019</h3>
+            </div>
+            <div class="article-body">
+                <p>Content of Article 4: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque exercitationem amet tempore veritatis laboriosam necessitatibus.
+                </p>
+            </div>
+            <div class="article-footer">
+                <button class="btn btn-default">View</button>
+                <button class="btn btn-default">Edit</button>
+                <button class="btn btn-default">Delete</button>
+                <span class="muted">comments: 24</span>
+            </div>
+        </div>
 
+    </div>
 
 </body>
 

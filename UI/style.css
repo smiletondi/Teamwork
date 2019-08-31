@@ -56,7 +56,8 @@ body {
     font-size: 25px;
     font-family: 'Berkshire Swash';
     color: #fff;
-    padding: 10px 10px;;
+    padding: 10px 10px;
+    ;
 }
 
 .nav-title>a {
@@ -140,17 +141,23 @@ textarea[name="article"] {
     justify-content: space-between;
 }
 
-.muted{
+.muted {
     margin: 0 10px;
     opacity: 0.5;
 }
 
-.my-article-list>.article>.article-footer{
+.my-article-list>.article>.article-footer {
     justify-content: space-evenly;
 }
-/* 
-.my-articles.article-body>p {
-    white-space: nowrap;
-    overflow: default;
-    text-overflow: ellipsis;
-} */
+
+.edit-article textarea {
+    border: none;
+    width: 60vw;
+    height: 30vh;
+    display: block;
+    margin: 2em 0;
+    box-shadow: 0 10px 16px 0 rgba(96, 158, 126, 0.2);
+
+    /* text-overflow: initial; */
+
+}

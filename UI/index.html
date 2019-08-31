@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
 </head>
 
 <body>
 
-     <!-- Navbar -->
+    <!-- Navbar -->
     <div class="nav container">
         <div class="nav-header">
             <div class="nav-title">
@@ -19,60 +20,66 @@
         </div>
 
         <div class="nav-links">
-            <a href="./signup.html">My articles</a>
+            <a href="./myArticles.html">My articles</a>
             <button class="btn btn-default">Log Out</button>
         </div>
     </div>
 
     <!-- post articles -->
     <div class="container">
-            <form method="POST" action="/postArticle">
-                <textarea name="article" placeholder="Write something ..."></textarea>
-                <button class="btn btn-default share-btn" type="submit">Share</button>
-            </form>
+        <form method="POST" action="/postArticle">
+            <textarea name="article" placeholder="Write something ..."></textarea>
+            <button class="btn btn-default share-btn" type="submit">Share</button>
+        </form>
         <hr>
     </div>
 
     <!-- articles list -->
 
-    <div class="container article">
-        <div class="article-header">
-            <h3>Employee 1 at 05:28 27/04/2019</h3>
+    <div class="container feed-article-list">
+        <div class="container article">
+            <div class="article-header">
+                <h3>Employee 1 at 05:28 27/04/2019</h3>
+            </div>
+            <div class="article-body">
+                <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
+                </p>
+            </div>
+            <div class="article-footer">
+                <button class="btn btn-default">View</button>
+                <span class="muted">comments: 0</span>
+            </div>
         </div>
-        <div class="article-body">
-            <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!</p>
+
+        <div class="container article">
+            <div class="article-header">
+                <h3>Employee 2 at 05:18 27/04/2019</h3>
+            </div>
+            <div class="article-body">
+                <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
+                </p>
+            </div>
+            <div class="article-footer">
+                <button class="btn btn-default">View</button>
+                <span class="muted">comments: 8</span>
+            </div>
         </div>
-        <div class="article-footer">
-            <button class="btn btn-default">View</button>
-            <span class="muted">comments: 0</span>
+
+        <div class="container article">
+            <div class="article-header">
+                <h3>Employee 3 at 05:08 27/04/2019</h3>
+            </div>
+            <div class="article-body">
+                <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
+                </p>
+            </div>
+            <div class="article-footer">
+                <button class="btn btn-default">View</button>
+                <span class="muted">comments: 12</span>
+            </div>
         </div>
     </div>
 
-    <div class="container article">
-        <div class="article-header">
-            <h3>Employee 2 at 05:18 27/04/2019</h3>
-        </div>
-        <div class="article-body">
-            <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!</p>
-        </div>
-        <div class="article-footer">
-            <button class="btn btn-default">View</button>
-            <span class="muted">comments: 8</span>
-        </div>
-    </div>
-
-    <div class="container article">
-        <div class="article-header">
-            <h3>Employee 3 at 05:08 27/04/2019</h3>
-        </div>
-        <div class="article-body">
-            <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!</p>
-        </div>
-        <div class="article-footer">
-            <button class="btn btn-default">View</button>
-            <span class="muted">comments: 12</span>
-        </div>
-    </div>
 
 </body>
 

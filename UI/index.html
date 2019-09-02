@@ -26,9 +26,11 @@
     </div>
 
     <!-- post articles -->
-    <div class="container">
+    <div class="container write-article">
         <form method="POST" action="/postArticle">
-            <textarea name="article" placeholder="Write something ..."></textarea>
+            <!-- <label for="article-title">Title:</label> -->
+            <textarea class="form-control" name="article-title" placeholder="Article Title Here.."></textarea>
+            <textarea class="form-control" name="article-body" placeholder="Article Body Here.."></textarea>
             <button class="btn btn-default share-btn" type="submit">Share</button>
         </form>
         <hr>
@@ -39,42 +41,48 @@
     <div class="container feed-article-list">
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 1 at 05:28 27/04/2019</h3>
+                <h3>Article 1
+                    <span class="muted">By Employee 1 at 05:28 27/04/2019</span>
+                </h3>
             </div>
             <div class="article-body">
                 <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
                 </p>
             </div>
             <div class="article-footer">
-                <button class="btn btn-default">View</button>
+                <a class="btn btn-default" href="./viewArticle.html">View</a>
                 <span class="muted">comments: 0</span>
             </div>
         </div>
 
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 2 at 05:18 27/04/2019</h3>
+                <h3>Article 1
+                    <span class="muted">By Employee 2 at 05:18 27/04/2019</span>
+                </h3>
             </div>
             <div class="article-body">
                 <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
                 </p>
             </div>
             <div class="article-footer">
-                <button class="btn btn-default">View</button>
+                <a class="btn btn-default" href="./viewArticle.html">View</a>
                 <span class="muted">comments: 8</span>
             </div>
         </div>
 
         <div class="container article">
             <div class="article-header">
-                <h3>Employee 3 at 05:08 27/04/2019</h3>
+                <h3>Article 1
+                    <span class="muted">By Employee 3 at 05:08 27/04/2019</span>
+                </h3>
             </div>
             <div class="article-body">
                 <p>Content of Article 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sapiente!
                 </p>
             </div>
             <div class="article-footer">
-                <button class="btn btn-default">View</button>
+                <a class="btn btn-default" href="./viewArticle.html">View</a>
                 <span class="muted">comments: 12</span>
             </div>
         </div>

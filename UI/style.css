@@ -205,3 +205,13 @@ label:after {
 .comment-form textarea {
     width: 100%;
 }
+
+@media only screen and (max-width: 320px) {
+    .btn {
+      font-size: 3vw;
+    }
+
+    .nav-links {
+        font-size: 4vw;
+    }
+  }

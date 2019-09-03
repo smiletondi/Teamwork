@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Berkshire+Swash');
+
 /* responsive   */
 
 .container {
@@ -128,7 +130,9 @@ label {
     float: left;
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
     color: #483519;
 }
 
@@ -208,10 +212,10 @@ label:after {
 
 @media only screen and (max-width: 320px) {
     .btn {
-      font-size: 3vw;
+        font-size: 3vw;
     }
 
     .nav-links {
         font-size: 4vw;
     }
-  }
+}
